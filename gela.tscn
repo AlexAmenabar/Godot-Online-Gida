@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://brp86ai2f0s52"]
+
+[ext_resource type="PackedScene" uid="uid://brpw3b6f0m52d" path="res://jokalaria.tscn" id="1_5geqq"]
+[ext_resource type="Texture2D" uid="uid://bjkbdwtv00lde" path="res://Assets/1.10.2.png" id="2_k7ybm"]
+
+[node name="Gela" type="Node2D"]
+
+[node name="jokalaria1" parent="." instance=ExtResource("1_5geqq")]
+position = Vector2(467, 380)
+
+[node name="jokalaria2" parent="." instance=ExtResource("1_5geqq")]
+position = Vector2(581, 380)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(584, 456)
+texture = ExtResource("2_k7ybm")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(518, 344)
+zoom = Vector2(5, 5)
+
+[node name="TxatTestua" type="TextEdit" parent="."]
+visible = false
+offset_left = 438.0
+offset_top = 323.0
+offset_right = 603.0
+offset_bottom = 358.0
+
+[node name="TxatOsoa" type="RichTextLabel" parent="."]
+visible = false
+offset_left = 469.0
+offset_top = 285.0
+offset_right = 626.0
+offset_bottom = 335.0
+theme_override_font_sizes/normal_font_size = 10

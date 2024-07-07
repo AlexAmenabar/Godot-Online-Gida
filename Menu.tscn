@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgs6uxeva3d1j"]
+
+[ext_resource type="Script" path="res://MenukoKontrolagailua.cs" id="1_x6va4"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_x6va4")
+
+[node name="ZerbitzariaSortu" type="Button" parent="."]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 321.0
+offset_right = 453.0
+offset_bottom = 378.0
+text = "Saioa Sortu"
+
+[node name="ZerbitzariraKonektatu" type="Button" parent="."]
+layout_mode = 0
+offset_left = 722.0
+offset_top = 318.0
+offset_right = 945.0
+offset_bottom = 376.0
+text = "Konektatu"
+
+[node name="ZerbitzariIP" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 143.0
+offset_right = 555.0
+offset_bottom = 199.0
+placeholder_text = "Zerbitzariaren IP helbidea..."
+
+[node name="ZerbitzariPortu" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 647.0
+offset_top = 144.0
+offset_right = 863.0
+offset_bottom = 202.0
+placeholder_text = "Zerbitzariaren portua..."
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(577, 325)
+
+[connection signal="pressed" from="ZerbitzariaSortu" to="." method="_on_zerbitzaria_sortu_pressed"]
+[connection signal="pressed" from="ZerbitzariraKonektatu" to="." method="_on_zerbitzarira_konektatu_pressed"]
